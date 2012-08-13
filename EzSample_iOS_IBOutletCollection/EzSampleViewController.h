@@ -10,4 +10,13 @@
 
 @interface EzSampleViewController : UIViewController
 
+@property (nonatomic,readwrite,strong) IBOutletCollection(UILabel) NSArray* labels;
+
+- (IBAction)numbering:(UIButton*)sender;
+- (IBAction)numberingByTag:(UIButton*)sender;
+- (IBAction)numberingByLocationX:(UIButton*)sender;
+- (IBAction)numberingByLocationY:(UIButton*)sender;
+
+- (void)numberingLabelsInOrder:(NSArray*)labels;
+
 @end
